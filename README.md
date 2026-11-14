@@ -1,32 +1,33 @@
 # Engineering Portfolio — C. Bhavith Sai
 
-A responsive, static portfolio website for engineering projects spanning embedded systems, robotics, mechatronics, soft robotics and biomedical signal processing.
+A responsive static portfolio documenting engineering projects across embedded systems, robotics, mechatronics, soft robotics and biomedical signal processing.
 
-## Publish with GitHub Pages
+## Live website
 
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/ (root)**, then save.
-4. GitHub Pages will publish the site at:
-
-   `https://cbhavithscultural-cloud.github.io/engineering-portfolio/`
+https://cbhavithscultural-cloud.github.io/engineering-portfolio/
 
 ## Site structure
 
-- `index.html` — portfolio content and project case studies
-- `assets/css/style.css` — responsive visual design
+- `index.html` — portfolio landing page and selected project cards
+- `projects/sentry.html` — SENTRY embedded hardware case study
+- `projects/mobile-robot.html` — ROS 2 / Gazebo simulation case study
+- `projects/respiratory-monitoring.html` — offline respiratory dataset analysis case study
+- `projects/emg-soft-gripper.html` — SOFA soft-gripper simulation case study
+- `assets/css/style.css` — landing-page design
+- `assets/css/project.css` — shared case-study styling
 - `assets/js/main.js` — mobile navigation and current year
 
 ## Project scope and accuracy
 
-The project cards distinguish implementation types:
+The project cards and case studies distinguish implementation types:
+
 - **SENTRY:** embedded hardware project using STM32F407 and ESP32-C3.
 - **Adaptive Mobile Robot:** ROS 2 / Gazebo simulation.
 - **Respiratory Monitoring:** offline analysis of the PhysioNet BIDMC dataset.
 - **Adaptive EMG Soft Robotic Gripper:** SOFA simulation using a synthetic EMG signal.
 
-The portfolio does not claim clinical validation, real-time patient monitoring, live EMG acquisition, or physical validation of simulated systems. Project implementation details should be kept current as testing progresses.
+The portfolio does not claim clinical validation, real-time patient monitoring, live EMG acquisition, or physical validation of simulated systems. Results and status labels should be updated only when supported by repeatable tests.
 
-## Editing
+## Editing and deployment
 
-Update project descriptions and repository links in `index.html`. Keep the status labels accurate when a project advances from simulation or offline analysis to physical testing.
+The site is published with GitHub Pages from the `main` branch and repository root. Edit the HTML and CSS files directly; each commit triggers a Pages build and deployment.
