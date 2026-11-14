@@ -31,3 +31,16 @@ The portfolio does not claim clinical validation, real-time patient monitoring, 
 ## Editing and deployment
 
 The site is published with GitHub Pages from the `main` branch and repository root. Edit the HTML and CSS files directly; each commit triggers a Pages build and deployment.
+
+
+## Career OS
+
+A separate local-first application workspace is available at `/career/`:
+
+- Opportunity pipeline with stages, follow-up dates, notes and role links
+- Search and stage filters, CSV export and JSON backup/restore
+- Keyword-overlap role-fit helper based on documented project skills
+- Role-specific outreach email composer and a lightweight career guidance helper
+- Browser-local storage; application notes are not sent to a server
+
+The dashboard is a static front-end prototype. It does not yet connect to Gmail, LinkedIn or job boards, and it does not submit applications or send messages. Do not store credentials or sensitive documents in the public repository. The public site is not an authenticated private workspace.
