@@ -44,3 +44,10 @@ A separate local-first application workspace is available at `/career/`:
 - Browser-local storage; application notes are not sent to a server
 
 The dashboard is a static front-end prototype. It does not yet connect to Gmail, LinkedIn or job boards, and it does not submit applications or send messages. Do not store credentials or sensitive documents in the public repository. The public site is not an authenticated private workspace.
+
+
+## Career OS privacy and workflow notes
+
+The `/career/` workspace is a static browser-side prototype. It now includes animated responsive styling, an opportunity pipeline, a private inbox-event import, and an interview / online-test preparation planner. Gmail and LinkedIn are **not** directly authenticated inside the public website. Gmail data can be reviewed through the connected assistant and imported as a minimized JSON snapshot; do not place message bodies, addresses, resume files, OAuth tokens, or credentials in this public repository. LinkedIn actions remain manual or explicitly approved; no automated liking, mass-following, or account activity bot is included.
+
+The inbox import is a summary-only workflow. It does not provide continuous synchronization or background notifications. Browser storage is device-specific and should be backed up by exporting JSON.
